@@ -299,7 +299,7 @@ export default async function rect(
     clip +
     (opacity !== 1 ? `<g opacity="${opacity}">` : '') +
     (style.transform && currentClipPath
-      ? `<g clip-path="${currentClipPath}">`
+      ? `<g clip-path="${currentClipPath}" mask="${maskId}">`
       : '') +
     (backgroundShapes || shape) +
     (style.transform && currentClipPath ? '</g>' : '') +
