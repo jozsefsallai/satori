@@ -298,11 +298,11 @@ export default async function rect(
     (imageBorderRadius ? imageBorderRadius[0] : '') +
     clip +
     (opacity !== 1 ? `<g opacity="${opacity}">` : '') +
-    (style.transform && currentClipPath && maskId
-      ? `<g clip-path="${currentClipPath}" mask="${maskId}">`
+    (style.transform && currentClipPath
+      ? `<g clip-path="${currentClipPath}">`
       : '') +
     (backgroundShapes || shape) +
-    (style.transform && currentClipPath && maskId ? '</g>' : '') +
+    (style.transform && currentClipPath ? '</g>' : '') +
     (opacity !== 1 ? `</g>` : '') +
     (shadow ? shadow[1] : '') +
     extra
