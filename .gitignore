@@ -5,7 +5,7 @@ node_modules
 .next
 .idea
 .turbo
-dist
+# dist
 .pnpm-debug.log
 __diff_output__
 .eslintcache
